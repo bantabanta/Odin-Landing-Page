@@ -7,17 +7,17 @@
 
 :root {
   --primary-color: #1F2937;
-  --secondary-color: #E5E7EB;
+  --secondary-color: #D5D7DB;
   --call-to-action-color: #3882F6;
   --primary-font-color: #F9FAF8;
+  --secondary-font-color: #1F2937;
 }
 
 body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  max-width: 1000px;
 }
 
 .container {
@@ -33,6 +33,11 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  border-radius: .25rem;
+  padding: .2rem 1.5rem;
 }
 
 /* Nav DONE */
@@ -59,7 +64,6 @@ a {
 /* Hero Section DONE */
 
 .hero {
-  max-width: 850px;
   justify-content: center;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -80,15 +84,13 @@ a {
 .hero__button {
   background-color: var(--call-to-action-color);
   border: none;
-  border-radius: .25rem;
-  padding: .25rem 1rem;
   color: var(--primary-font-color);
 }
 .hero__img {
   background-size: cover;
   text-align: center;
-  margin: 0 .5rem;
-  width: 700px;
+  margin-left: .5rem;
+  width: 800px;
   height: auto;
 }
 
@@ -96,17 +98,17 @@ a {
 
 .illustrations {
   text-align: center;
-  padding: 2rem 6rem;
-  border: .5px solid lightpink;
+  padding: 0 10rem 4rem;
 }
 .illustrations__container {
   display: flex;
   gap: 2rem;
   padding: 1rem;
-  color: var(--secondary-color);
+  color: #B5B7BB;
 }
 .illustrations__header {
   font-size: 36px;
+  margin: 2rem;
   color: var(--primary-color)
 }
 .illustration {
@@ -120,6 +122,48 @@ a {
   width: 100%;
   border: 1px solid var(--call-to-action-color);
   border-radius: 1rem;
+}
+
+/* Quote Section */
+
+.quote {
+  background-color: var(--secondary-color);
+  padding: 4rem 10rem;
+}
+.quote__text {
+  font-size: 36px;
+  margin: 0;
+  font-weight: light;
+  color: #1F2937;
+}
+.quote__author {
+  display: flex;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+/* Call to Action Section */
+
+.action-call {
+  padding: 3rem 6rem;
+}
+.action-call__wrapper {
+  border-radius: .25rem;
+  padding: 2rem 6rem;
+  background-color: var(--call-to-action-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+
+}
+.action-call__text {
+  color: var(--primary-font-color)
+}
+.action-call__button {
+  background-color: var(--call-to-action-color);
+  border: 1px solid var(--primary-font-color);
+  color: var(--primary-font-color);
+  flex-shrink: 0;
 }
 
 /* Footer DONE */
