@@ -311,7 +311,7 @@ button:hover {
 
 @media (max-width: 1100px ) {
   .nav, .hero, .project-cards, .quote, .subscribe {
-    /* width: 90%; */
+    width: 90%;
     max-width: 900px;
   }
   .wrapper__quote {
